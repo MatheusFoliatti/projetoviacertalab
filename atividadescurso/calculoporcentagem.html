@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<title>Descubra a porcentagem</title>
+<script>
+   
+// 3. Crie uma função que recebe um valor e a porcentagem, calcule e retorne o valor
+
+// Função para calcular a porcentagem
+   
+    function calculodaporcentagem(numero, porcento){
+        let total = ((numero * porcento) / 100)
+        return total
+    }
+
+// Pedindo o valor e a porcentagem para fazer o retorno ao usuário.
+
+    alert("Informe o valor e a porcentagem que gostaria.")
+    let entrada = parseInt(prompt(`Valor: `))
+    let porcentoentrada = parseInt(prompt(`Porcentagem: `))
+
+    let resultado = calculodaporcentagem(entrada,porcentoentrada)
+
+    console.log(`${porcentoentrada}% de ${entrada} é ${resultado}`)
+</script>

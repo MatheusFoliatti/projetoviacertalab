@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<title>Salário</title>
+<script>
+
+// 7. Crie um programa que receba o valor do salário e o total de horas trabalhadas no mês. Calcule o valor da hora recebida.
+
+// Função da quantidade de dinheiro e horas.
+
+    function dinheirohoras(reais, horas) {
+        let resultado = (reais / horas)
+        return resultado
+    }
+
+    alert(`Insira seu salário e horas trabalhadas.`)
+    let salario = parseFloat(prompt(`Insira o salário:`))
+    let horas = parseFloat(prompt(`Insira quantas horas trabalhadas:`))
+
+    // O resultado das horas trabalhadas com o salário.
+
+    let resultado = dinheirohoras(salario,horas)
+
+    // Informações sobre o salário, horas trabalhadas e ganho por hora.
+
+    console.log(`Salário: R$${salario}`)
+    console.log(`Horas trabalhadas: ${horas}`)
+    console.log(`Ganho por hora: R$${resultado.toFixed(2)}`)
+</script>

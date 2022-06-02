@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<title>Par ou Impar</title>
+<script>
+
+// 4. Faça uma função que recebe um valor inteiro e verifica se o valor é par ou ímpar. Se o valor for par retorno booleano verdadeiro. 
+
+// Função para descobrir se o número é par ou impar e se é verdadeiro.
+
+    function numeroparouimpar(numeral){
+        let numero = parseInt(numeral) / 2
+        if (!Number.isInteger(numero)){
+        return false
+        } else if(Number.isInteger(numero)) {
+        return true
+    }}
+    alert("Digite um número que você quer saber se é Par ou Ímpar")
+    let numerousuario = prompt("Digite o número: ")
+
+// Se o número do teste for par, ele será verdadeiro, se não, será falso.
+
+    let test = numeroparouimpar(numerousuario)
+    if (test == true){
+
+        console.log(`Verdadeiro`)
+        console.log(`O número ${numerousuario} é par.`)
+
+    } else if (test == false){
+
+        console.log(`Falso`)
+        console.log(`O número ${numerousuario} é ímpar.`)
+    }
+</script>
