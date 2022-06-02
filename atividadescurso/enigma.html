@@ -1,0 +1,31 @@
+<meta charset="UTF-8">;
+<script>
+
+//4. Crie um jogo de adivinhação de número e enquanto o usuário não acertar o valor continue pedindo para informar o valor. Se o usuário errar mais de 3 vezes finalize e avise o usuário que ele perdeu.
+
+// Criando variaveis que serão usadas de placeholder
+
+    let segredo = 18;
+    let numero = 0;
+    let erro = 0;
+   
+// Se o segredo for o mesmo número que o usuário digitar, ele acertará e receberá a mensagem
+
+    while (segredo != numero) {
+        numero = parseInt(prompt('Descubra o segredo'))
+        
+        if (segredo == numero) {
+                alert('Você acertou!')
+        } else {
+                alert('Você errou!')
+                erro++
+            }
+        
+// Se o usuário errar suas 3 tentativas ele perderá.
+
+            if (erro == 3) {
+                numero = 18
+                alert ('voce perdeu')
+            }
+    }
+</script>
