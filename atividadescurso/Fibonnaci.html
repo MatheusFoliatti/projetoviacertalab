@@ -1,0 +1,20 @@
+<meta charset="UTF-8">;
+<title> Fibonnaci </title>
+<script>
+
+// Atividade Extra 03 A sequência Fibonacci é 1, 1, 2, 3, 5, 8, 13, 21, 34... crie um algoritmo para calcular os 50 primeiros números da sequência.
+
+// Criando a primeira e segunda variavel para que para descobrir a terceira, seja a soma das duas anterior.
+
+let variavel1 = 1
+        let variavel2 = 0
+
+        for(let numeral = 1; numeral <=50; numeral ++){
+            let variavel3 = variavel2 + variavel1
+            console.log(variavel3)
+            variavel2 = variavel1
+            variavel1 = variavel3
+        }
+
+
+</script>

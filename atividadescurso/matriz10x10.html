@@ -1,0 +1,29 @@
+<meta charset="UTF-8">;
+<title> Matriz </title>
+<script>
+
+// Atividade Extra 02 Crie um programa que exiba uma matriz 10x10 como o exemplo abaixo
+//|x| |x| |x| |
+//| |x| |x| |x|
+//|x| |x| |x| |
+//| |x| |x| |x|
+//|x| |x| |x| |
+//| |x| |x| |x|
+
+// Padrão criado e colocado nas variaveis.
+
+let matrizbase1 = '( X ) (   ) ( X ) (   ) ( X ) (   ) ( X ) (   ) ( X ) (   )'
+let matrizbase2 = '(   ) ( X ) (   ) ( X ) (   ) ( X ) (   ) ( X ) (   ) ( X )'
+
+// Usando um 'verdadeiro' e 'falso' para intercalar cada variavel montando a matriz.
+
+    for(numeral=1; numeral<=10; numeral++){
+        if(numeral%2) {
+            console.log(matrizbase1)
+            
+        } else {
+
+            console.log(matrizbase2)
+        }
+    }
+</script>

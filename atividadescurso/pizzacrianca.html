@@ -1,0 +1,26 @@
+<meta charset="UTF-8">;
+<title> Joãozinho </title>
+<script>
+
+// Atividade Extra 01 Joãozinho vai convidar alguns colegas da escola para comer pizza em sua casa. Dona Maria, a mãe de Joãozinho precisa saber quanto vai gastar com isto. Escreva um algoritmo que, dado o número de colegas que vão comer pizza, calcule o total da despesa, sabendo que: a) cada criança come três pedaços de pizza; b) cada pizza é cortada em dez pedaços; cada pizza custa R$ 21,00
+
+// Variaveis com as informações das questões
+
+let pizzainteira = 21
+let crianca = 3
+let pizzapedacos = 10
+let numerocrianca = parseInt(prompt('Quantas crianças vão à festa?'))
+
+// Calculos para descobrir quantas pizzas
+
+let pedacostotal = numerocrianca * crianca
+let numeropizza = Math.ceil(pedacostotal/10);
+let despesa = numeropizza * pizzainteira
+
+// Informações mostradas e resolvidas.
+
+console.log('Terão ' + pedacostotal + ' pedaços')
+console.log('Terão ' + numeropizza + ' Pizzas')
+console.log('O valor total é: R$' + despesa)
+
+</script>
