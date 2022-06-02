@@ -1,0 +1,25 @@
+<meta charset="UTF-8">;
+<title> Comuns </title>
+<script>
+
+//Dado o vetor a = [2,4,3,8,9,10,11,15] e b = [11,15,20,30,40, 2] utilizando for para percorrer os vetores, crie um vetor c com os elementos em comum.
+
+// Vetores criados que serão usados para criar o terceiro que terá os numeros comuns.
+
+let vetora = [2,4,3,8,9,10,11,15]
+let vetorb = [11,15,20,30,40,2]
+let vetorc = []
+
+// Usando as igualdades para comparar numero por número, usando uma variavel e puxando para mostra no vetorc que serão os números comuns
+
+for(i=0; i<=7; i++){
+            for(j=0; j<=5; j++){
+                if(vetora[i]==vetorb[j]){
+                    let aglugleigla = (vetorb[j])
+                    vetorc.push(aglugleigla)
+                    
+                }
+            }
+}
+console.log('Números comuns: ' + vetorc)
+</script>
