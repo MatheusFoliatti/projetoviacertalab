@@ -1,0 +1,38 @@
+<meta charset="UTF-8">;
+<title> Empréstimo </title>
+<script>
+
+// Escreva um programa para aprovar ou não o empréstimo bancário para a compra de uma casa. O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar. Calcule o valor da prestação mensal, sabendo que ela não pode exceder 30% do salário ou então o empréstimo será negado.
+
+// Variaveis que serão pedidas
+
+let valor = parseInt(prompt('Insira o valor da casa: '))
+let salario = parseInt(prompt('Insira seu salário: '))
+let anos = parseInt(prompt('Em quantos anos você vai pagar a casa: '))
+
+// Calculo das prestações e o desconto baseado no salário.
+
+let prestacao = valor / (anos*12)
+let salario30 = salario*0.3
+
+// Se 30% do salario for maior que a prestação ela será recusada, se ele for menor, será aceita.
+
+console.log(salario30)
+if(salario30 > prestacao){
+
+    console.log('Seu empréstimo foi recusado')
+} else if(salario30 < prestacao*0.3){
+
+    console.log('Seu empréstimo foi aceito')
+}
+
+
+
+
+
+
+
+
+
+
+</script>
