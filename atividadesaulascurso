@@ -1,0 +1,17 @@
+<script>
+
+//1. Crie duas variáveis A e B e imprima o resultado das operações básicas de +,-.*,/. 
+
+// Criando duas varáveis, 'Setando' os valores que serão usados nas operações.
+ 
+let a = 100;
+let b = 500;
+
+// No console será evetuado as operações: adição, subtração, multiplicação e divisão.
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+
+</script>
