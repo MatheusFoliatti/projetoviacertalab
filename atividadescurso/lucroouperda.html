@@ -1,0 +1,30 @@
+<meta charset="UTF-8"> 
+<script>
+
+// 4. João é um investidor e ele quer um programa para calcular o seu lucro nas suas operações financeiras. Ele irá informar o capital inicial investido e o capital final, calcule o lucro ou prejuízo da operação. Mostre o valor de ganho ou prejuízo e a porcentagem de ganho ou prejuízo. Para facilitar o entendimento mostre uma mensagem por exemplo. "Você teve um ganho de R$ ... (...%)" ou "Você teve um prejuízo de R$ ... (...%)"
+
+// Variaveis para pedir os valores iniciais e finais.
+
+let capitalinicial = parseFloat(prompt('Capital Inicial'))
+let capitalfinal = parseFloat(prompt ('Capital Final'))
+
+// Variavel que encontrará a diferença do inicio e fim
+
+let resultado = capitalfinal - capitalinicial
+
+// Porcentagem de ganho ou perda
+
+let porcentagem = (capitalfinal * 100) / capitalinicial - 100
+
+// Condição positiva de ganho e negativa de perda.
+
+if(resultado > 0){
+    console.log('Você teve um um ganho de R$' + resultado + porcentagem + '%')
+}
+else if(resultado < 0){
+    console.log('Você teve um prejuízo de R$' + resultado + - porcentagem + '%')
+}
+
+
+
+</script>

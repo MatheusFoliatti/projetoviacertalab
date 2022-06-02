@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<script>
+
+//1. Crie um programa que recebe três notas de 0..100, calcule a média e caso seja maior ou igual a 70 diga que você foi aprovado, caso contrário reprovado. Também informe qual é o seu conceito seguindo as seguintes regras: 0 até 49 conceito D, 50 até 69 conceito C, 70 até 89 conceito B, de 90 até 100 conceito A;
+
+// Conceitos: A = 90 - 100 B = 70 - 89 C = 50 - 69 D = 0 - 49
+
+// Variaveis definidas.
+
+let n1 = 75
+let n2 = 60
+let n3 = 100
+
+// Media realizada.
+
+let media = (n1 + n2 + n3) / 3
+
+// A media entrará em alguma das condições e então o console mostrará qual conceito ela pertence.
+
+if(media >= 90) {
+    console.log ('Conceito A')
+}
+if(media >= 70 && media < 89){
+    console.log('Conceito B')
+}
+if(media >= 50 && media < 69){
+    console.log('Conceito C')
+}
+if (media >= 0 && media < 49){
+    console.log('Conceito D')
+}
+
+
+</script>
