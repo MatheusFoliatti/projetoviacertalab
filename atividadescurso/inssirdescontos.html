@@ -1,0 +1,58 @@
+<meta charset="UTF-8">;
+<title> Salário </title>
+<script>
+
+// 5. Calcule o salário liquido levando em conta o INSS e o IR. Primeiramente calcula e desconta o INSS e após calcula o IR.
+
+// Calculo do inss 
+
+let sbruto = parseFloat(prompt("Insira o salário bruto: "))
+if(sbruto <= 1212) {
+
+    var inss = ((sbruto * 7.5)/100) - 0.00
+
+} else if (sbruto >= 1212.01 && sbruto <= 2427.35) {
+
+    var inss = ((sbruto * 09.0)/100) - 18.18
+
+} else if (sbruto >= 2427.36 && sbruto <= 3641.03) {
+
+    var inss = ((sbruto * 12.0)/100) - 91.01
+
+} else if (sbruto >= 3641.04) {
+
+    var inss = ((sbruto * 14.0)/100) - 163
+}
+
+// Calculo do imposto de renda
+
+if(sbruto <= 1903.98) {
+
+    var ir = 0
+
+} else if (sbruto >= 1903.99 && sbruto <= 2826.65) {
+
+    var ir = ((sbruto * 7.5)/100) - 142.80
+
+} else if (sbruto >= 2826.66 && sbruto <= 3751.05) {
+
+    var ir = ((sbruto * 15.0)/100) - 354.80
+
+} else if (sbruto >= 3751.06 && sbruto <= 4664.68) {
+
+    var ir = ((sbruto * 22.5)/100) - 636.13
+
+} else if (sbruto >= 4664.69) {
+
+    var ir = ((sbruto * 27.5)/100) - 869.36
+}
+
+// Calculo e disposição final dos valores descontados.
+
+let final = sbruto - inss - ir
+console.log(`Valor do salário: R$${(sbruto.toFixed(2))}`)
+console.log(`INSS: R$${(inss.toFixed(2))}`)
+console.log(`IR: R$${(ir.toFixed(2))}`)
+console.log(`Desconto: R$${(inss + ir.toFixed(2))}`)
+console.log(`Total: R$${(final.toFixed(2))}`)
+</script>

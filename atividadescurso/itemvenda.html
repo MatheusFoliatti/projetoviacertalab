@@ -1,0 +1,30 @@
+<meta charset="UTF-8">;
+<title> Brechó </title>
+<script>
+
+// 2. Um brechó revende produtos usados, e fixa o preço de venda de cada produto conforme o valor de sua aquisição: se o preço de aquisição de um produto é menor do de R$ 50,00 ele deve ser vendido por um preço 45% maior; caso contrário, o lucro será de 30%. Sabendo disso, construa um algoritmo que leia o valor de aquisição de um produto e mostre o seu valor de venda.
+
+// Variavel do item comprado com seu preço
+
+let item = parseFloat(prompt(`Insira o preço do item comprado: `)) 
+let venda = 0
+
+// Se o item valer menos que 50 reais na aquisição ele recebe um aumento de 45% 
+
+if (item <= 50){
+    venda = item + (item * 0.45)
+
+}
+
+// Se o item for maior que 50 reais na aquisição ele recebe um aumento de 30%
+
+else { (item > 50)
+    venda = item + (item * 0.30)
+}
+
+// Valor original do produto e seu valor de venda.
+
+console.log('O preço original do produto era = ' + item)
+console.log('O produto foi vendido à = ' + venda)
+
+</script>
