@@ -1,0 +1,216 @@
+Comentários:
+// Comentários.
+
+/* Comentário
+De mutliplas
+Linhas
+Sem
+Interferir
+O código.
+*/
+
+Variaveis:
+/* "var" Declara uma variável podendo atribuir um valor junto na sua criação.
+IMPORTANTE: Apesar de ser muito utilizado, o "var" não é mais recomendado
+pelas boas práticas de programação.
+*/
+
+var numero;
+var umNumero = 10;
+
+// "let" Declara uma variável com escopo de bloco.
+
+let outroNumero = 5;
+let outroNumber;
+
+/* "const" Declara uma variável apenas para leitura. Após atribuir um valor a uma const, 
+não será possível altera-lo
+*/
+
+const ola = 'Olá mundo';
+
+// Case-Sensitive: Diferencia letras maiúsculas de minúsculas, 'NOME' é diferente de 'nome'
+
+let nome = 'Jonas';
+let NOME = 'Brother';
+
+// Caracteres válidos: Letras: Evitar cedilha e acentuação; Números: desde que a variavel comece
+// com uma letra, ela é valida. Underline ("_") e cifrão ("$"): São permitidos em qualquer posição
+// e são mais utilizados em nas variáveis de bibliotecas e frameworks.
+
+let NomeComprador = 'João do Pão';
+let carro2000 = 123;
+let w3c = "https://www.w3.org/"
+let _variavel = 99;
+let $www = true;
+
+Tipos de dados:
+// Number; String; Boolean; Array; Null e Undefined; Symbol*; Object; Function
+// Saber esse tipo de informação é importante para identificar melhor os erros.
+// Number: São todos os números reais que aprendemos nas aulas de matemática.
+
+let numeroInteiro = 100;
+let numeroDecimal = 5.38;
+let numeroNegativo = -200.;
+
+// Operações podem ser usadas (+, -, /, *)
+
+let numero = 5;
+let numero2 = 7;
+let resultado = numero + numero2; ou let resultado = numero - numero2;
+let resultadoMultiplicacao = numero * 0.5;
+let resultadoDivisao = numero / 1 
+// Divisão por "0" causará erro
+
+// Máximo e Minimo: Para saber os valores máximos e mínimos, você pode efetuar os
+// seguintes comandos no console.log
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+
+//Strings: Valores de de texto, chamados de "cadeia de caracteres", podem ser usadas
+// aspas duplas ou aspas simples
+
+let olaMundo = "Olá Mundo";
+let olaMundo2 = 'Olá Mundo';
+
+// Caracteres Especiais: para adicionar caracteres especiais, (', ", &, quebra de linha, etc)
+// utilizamos a barra invertida "\"
+
+let caracteresEspeciais = "Lorem \n Ipsum \\ dolor \' \" amet";
+
+// \n = Nova Linha; \\ = exibe a \; \' = exibe a '; \" = exibe a "
+// Você pode concatenar (unir) strings de diversas formas:
+// Usando o sinal de +
+let ola = "Olá ";
+let mundo = "Mundo";
+
+let olaMundo = ola+mundo;
+
+// Usando String.concat, também podem unir diversas strings 
+let olaMundo = ola.concat(mundo);
+let olaMundo = ola.concat(mundo, "frase", ola);
+
+// Template de Strings: nova foram de concatenação que utiliza o ${expressão} e a crase ao redor da string
+let olaMundo = '${ola} ${mundo} ${1+1}';
+
+// Booleanos: São tipos de dados que só possuem dois valores: TRUE = VERDADEIRO e FALSE = FALSO 
+let verdadeiro = true;
+let falso = false;
+
+// Comparações: 
+
+// true
+let comparacao = 1 == 1;
+
+// false
+let comparacao2 = 1 > 5;
+
+// true
+
+let comparacao3 = "banana" = "banana";
+
+// Se você testar 1 == "1", obterá true. Para fazer Comparações que levam em consideração
+// o valor e o tipo do dado, utilize ===.
+
+//true
+console.log(1 == "1");
+
+//false
+console.log(1 === "1");
+
+// Array ou vetor: lista de coleção de dados que pode ser acessada por indice.
+// Para criar um vetor vazio basta criar uma variavel e atribuir [] a ela.
+let vetor = [];
+
+// Atribuindo valores usando a virgula. Qualquer tipo de valor pode ser adicionado no veto
+let vetor = [1, 3, 5, 7, 9, 11];
+let vetor = [1, 'Olá Mundo', true, [1,2,3];
+
+// Os valores podem ser acessados pelo indice. Ele começa no 0, o primeiro item estará na posição 0
+// o segundo na posição 1 e sucessivamente.
+
+let vetor = [1, 3, 5, 7, 9, 11];
+console.log(vetor[1]); // O número 3 será exibido.
+
+// Você pode alterar um valor existente ou inserir um novo valor em uma posição especifica
+
+let vetor = [1, 3, 5, 7, 9];
+
+vetor[0] = 9000; // O valor da primeira posição (1), se tornará o 9000.
+vetor[5] = 11; // O valor será inserido após o ultimo elemento.
+
+// Null: Dado especial que representa a falta de valor de qualquer outro tipo de dado.
+
+let x = null;
+let y = 1;
+y = null;
+
+// Undefined: Ele aparece quando tentamos acessar o valor de uma variavel antes de ter 
+// atribuido algo a ela.
+
+let x;
+console.log(x);
+
+// Undefined !== Null, são diferentes
+
+// Objeto: é um tipo de dado composto pelos outros tipos. Com ele, podemos relacionar informações
+// em uma variavel.
+
+let carro = {
+    rodas: 4,
+    portas: 2,
+    nome: "um carro",
+    aVenda: true
+};
+
+// Você pode adicionar criar um novo objeto de duas formas. Você também pode alterar os dados.
+
+carro.portas = 2;
+carro["portas"] = 2;
+
+carro.rodas = 5;
+carro.portas = 4;
+carro.nome = "Carrão";
+
+carro["rodas"] = 3;
+carro["portas"] = 2;
+carro["nome"] = "Carrinho";
+
+// Funções: serve para criar uma sequência de operações para serem executadas.
+
+let olaMundo = function(){
+    console.log("Olá Mundo");
+    console.log("Olá Mundo novamente");
+    console.log("Olá Mundo outra vez");
+}
+
+olaMundo();
+
+ou 
+
+function olaMundo(){
+    console.log("Olá Mundo");
+    console.log("Olá Mundo novamente");
+    console.log("Olá Mundo outra vez");
+}
+
+olaMundo();
+
+// É possivel passar valores para a função acessar
+
+function somar(valor1, valor2){
+    let resultado = valor1 + valor2;
+    console.log (resultado);
+}
+
+somar(1,2)
+somar(4,4)
+somar(99,1)
+
+// O "return" vai parar a função e retornar um valor.
+
+function somar(valor1, valor2){
+    let resultado = valor1 + valor2;
+    return resultado;
+}
+
