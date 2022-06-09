@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Média</title>
+
+    <style>
+        body{
+            background-color: #ccc;
+            background-image: url(https://papers.co/wallpaper/papers.co-bf55-school-anime-illust-orange-minimal-simple-art-36-3840x2400-4k-wallpaper.jpg);
+            background-position: center;
+            height: auto;
+            width: auto;
+            background-repeat: no-repeat;
+            background-size: 1500px;
+        }
+
+        p{
+            font-weight: bold;
+        }
+
+
+        #resultado{
+            border: 1px solid blueviolet;
+            background-color: #fff;
+            border-radius: 5px;
+            height: 20px;
+            width: 176px;
+        }
+
+        button{
+            box-sizing: border-box;
+            box-shadow: 5px 2px;
+            padding: 10px;
+            color: white;
+            background: black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: cyan;
+            color: black;
+        }
+
+        .label-input{
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <label class="label-input"> Digite seu nome </label> <br>
+    <input type="text" id="nome"> <br>
+    
+    <label class="label-input"> Nota 1 </label> <br>
+    <input id="nota1" type="number"> <br>
+
+    <label class="label-input"> Nota 2 </label> <br>
+    <input id="nota2" type="number"> 
+    <br>    
+    <label class="label-input"> Média </label>
+    <div id="resultado"></div>
+    <p>Média para aprovação: 7 pontos</p>
+    <p> Vermelho - Reprovado</p>
+    <p> Verde - Aprovado </p>
+    <button onclick="calcularNota()"> Calcular </button> <br>
+    <br>
+
+<script>
+
+    function calcularNota(){
+       let nota1 = parseInt(document.querySelector('#nota1'). value);
+       let nota2 = parseInt(document.querySelector('#nota2'). value);
+       let nome = document.querySelector('#nome').value;
+
+       let media = (nota1 + nota2)/2;
+
+       document.querySelector('#resultado').innerHTML = nome + ' sua média é: ' + media;
+
+       if(media>=7){
+           document.querySelector('#resultado').style.color = 'green';
+       } else{
+            document.querySelector('#resultado').style.color = 'red';
+       }
+
+    }
+    </script>
+</body>
+</html>
