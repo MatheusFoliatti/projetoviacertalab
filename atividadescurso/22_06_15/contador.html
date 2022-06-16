@@ -1,0 +1,25 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="contador.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+
+    <script src="contador.js"></script>
+</head>
+<body>
+    <div id="janela">
+        <h1 id="titulo">Contador</h1>
+        <div id="input"><label>Valor Inicial do Contador</label><br><input id="inicial" type="number"></div>
+        <h1 id="contador">0</h1>
+        <div id="botoes">
+            <button id="aumentar" onclick="increment()">Aumentar</button>
+            <button id="reiniciar" onclick="resetCounter()">Reiniciar</button>
+            <button id="diminuir" onclick="decrease()">Diminuir</button>
+        </div>
+    </div>
+
+</body>
+</html>
